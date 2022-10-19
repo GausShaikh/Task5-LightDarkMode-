@@ -1,0 +1,224 @@
+<html>
+    <head>
+        <title>Home page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><!--For CSS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!--Jquery for animation-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script><!--JS For event -->
+        <link href="Boot.css" rel="stylesheet">
+
+        <style>
+            body{
+                background-color:white;
+                color:black
+            }
+            .mydark{
+                background-color:black;
+                color:white
+            }
+            </style>
+            <script>
+                function changeMode(){
+                    let mybody = document.body;
+                    mybody.classList.toggle('mydark')
+                }
+            </script>
+
+    </head>
+    <body>
+     
+
+        <header>
+            <!-- <div id="brand">
+                <h1>Zomato</h1>
+            </div>
+            
+            <div id="social">
+                <a href="www.facebook.com">
+                    <img src="https://i.ibb.co/wrG1PKh/facebook.png" alt="fb" class="socialLogo">
+                    <img src="https://i.ibb.co/19H5LvT/insta.png" alt="fb" class="socialLogo">
+                    <img src="https://i.ibb.co/w07K2Vn/youtube1.png" alt="fb" class="socialLogo">
+
+                </a>
+            </div> -->
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid"> <!--Avoid the Navstick in the corner in the small screen -->
+                    <div class="navbar-header">  <!--Toggle means one time show onw time hide and collapse is used for 3 line when click on these 3 lines then it will show the whole nav (in small screen)-->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" 
+                        data-target="#devNav">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Food</a>
+                    </div>
+                    <div id="devNav" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-user"></span> SignUp
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon  glyphicon-log-in"></span> Login
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <span class="glyphicon glyphicon-eye-open" onClick="changeMode()" ></span>
+
+        </header>
+        
+        <div id="search">
+            <div class="container">
+                <div id="devCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#devCarousel" data-slide-to="0" class="active"></li> <!--Keeping that img first in the slider-->
+                        <li data-target="#devCarousel" data-slide-to="1"></li>
+                        <li data-target="#devCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="https://i.ibb.co/TM736GS/food-Wallpaper.png" alt="one" class="size"/>
+                        </div>
+                        <div class="item">
+                            <img src="https://i.ibb.co/S0y31nw/81f3ff974d82520780078ba1cfbd453a1583259680.webp" alt="one" class="size"/>
+                        </div>
+                        <div class="item">
+                            <img src="https://i.ibb.co/HKB8pSZ/photo-1504674900247-0877df9cc836-ixlib-rb-1-2.jpg" alt="one" class="size"/>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#devCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#devCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            
+            <div class="logo">
+                <span>Zomato</span>
+            </div>
+            <div id="heading">
+                Best Place For Food Near You
+            </div>
+            <div id="dropdown">
+                <select>
+                    <option>---Select your City---</option>
+                    <option>Mumbai</option>
+                    <option>Pune</option>
+                </select>
+           
+            <select id="Restaurant">
+                <option>---Selct your Restaurant---</option>
+                <option>Ghazali</option>
+                <option>Cafe</option>
+            </select>
+            </div>
+        </div>
+        <div id="quicksearch">
+            <span id="quicksearchHeading">Quick Search</span>
+            <span id="quicksearchsubheading">Choose the Meal by choice</span>
+            <div id="main">
+                <div class="tilecontainer">
+                    <div class="tilecontainer1">
+                        <img src="https://github.com/Aakashdeveloper/edu_intern_aug_22/blob/master/css/homepage/images/dinner.png?raw=true" alt="Dinner">
+                    </div>
+                    <div class="tilecontainer2">
+                        <div class="tilecontainerheading">
+                            <button class="btn btn-primary">Dinner</button>
+                        </div>
+                        <div class="tilecontainersubheading">
+                             Best Place For Dinner Near You
+                        </div>
+                    </div>
+                </div>
+                <div class="tilecontainer">
+                    <div class="tilecontainer1">
+                        <img src="https://github.com/Aakashdeveloper/edu_intern_aug_22/blob/master/css/homepage/images/lunch.png?raw=true" alt="lunch">
+                    </div>
+                    <div class="tilecontainer2">
+                        <div class="tilecontainerheading">
+                            <button class="btn btn-success">Lunch</button>
+                        </div>
+                        <div class="tilecontainersubheading">
+                             Best Place For Dinner Near You
+                        </div>
+                    </div>
+                </div><div class="tilecontainer">
+                    <div class="tilecontainer1">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREInTR4fm5611rrPf-Gljz8HiVqiJDRL5uCA&usqp=CAU" alt="NightLife">
+                    </div>
+                    <div class="tilecontainer2">
+                        <div class="tilecontainerheading">
+                            <button class="btn btn-warning">NightLife</button>
+                        </div>
+                        <div class="tilecontainersubheading">
+                             Best Place For Dinner Near You
+                        </div>
+                    </div>
+                </div><div class="tilecontainer">
+                    <div class="tilecontainer1">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfs9yJiZrvfNv0FeSIn_nBTRfxtUOWgxoy6Q&usqp=CAU" alt="Snacks">
+                    </div>
+                    <div class="tilecontainer2">
+                        <div class="tilecontainerheading">
+                            <button class="btn btn-danger">Snacks</button>
+                        </div>
+                        <div class="tilecontainersubheading">
+                             Best Place For Dinner Near You
+                        </div>
+                    </div>
+                </div><div class="tilecontainer">
+                    <div class="tilecontainer1">
+                        <img src="https://github.com/Aakashdeveloper/edu_intern_aug_22/blob/master/css/homepage/images/drinks.png?raw=true" alt="Drinks">
+                    </div>
+                    <div class="tilecontainer2">
+                        <div class="tilecontainerheading">
+                            <button class="btn btn-info btn-black">Drinks</button>
+                        </div>
+                        <div class="tilecontainersubheading">
+                             Best Place For Dinner Near You
+                        </div>
+                    </div>
+                </div><div class="tilecontainer">
+                    <div class="tilecontainer1">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEPELIJwDd2ZvbHr05AgEFsi5blxtBoTWnZQ&usqp=CAU" alt="BreakFast">
+                    </div>
+                    <div class="tilecontainer2">
+                        <div class="tilecontainerheading">
+                            <button class="btn btn-primary">BreakFast</button>
+                        </div>
+                        <div class="tilecontainersubheading">
+                             Best Place For Dinner Near You
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; GausShaikh</p>
+            <hr>
+            <div class="footdiv">
+                <p>Contact Us</p>
+                <p>About Us</p>
+            </div>
+            <div class="footdiv">
+                <p>Contact Us</p>
+                <p>About Us</p>
+            </div>
+            <div class="footdiv noborder">
+                <p>Contact Us</p>
+                <p>About Us</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
